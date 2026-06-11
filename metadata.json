@@ -1,0 +1,6 @@
+{
+  "name": "Defesa de TCC: Vulnerabilidade Absoluta",
+  "description": "Aplicativo de apresentação interativa e simulador de banca examinadora para o TCC de Direito sobre a vulnerabilidade absoluta no estupro de vulnerável e a omissão estatal na Amazônia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
