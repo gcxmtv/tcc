@@ -43,30 +43,55 @@ const TCC_SLIDES: Slide[] = [
   {
     id: "intro",
     chapter: "1. Introdução",
-    title: "Problema e Relevância do Tema",
+    title: "Objeto do Estudo, Foco e Abordagem",
     bullets: [
-      "Distância alarmante entre as normas jurídicas protetivas e sua aplicação fática na Amazônia.",
-      "Problema Central: Como a omissão do Estado na educação sexual escolar e a precariedade da rede protetiva perpetuam o abuso na Região Norte?",
-      "Tríplice relevância: Social (consequências gravíssimas), Jurídica (responsabilidade por omissão estatal), e Acadêmica (escassez de monografias locais)."
+      "O TCC abordou não apenas os crimes contra vulneráveis com ênfase no Art. 217-A (Código Penal), mas também os delitos previstos no Estatuto da Criança e do Adolescente (ECA).",
+      "A pesquisa analisou a grave omissão do Estado brasileiro no seu dever de proteção integral, segurança e informação voltada às crianças e adolescentes.",
+      "Foco desta apresentação: Visando objetividade, nos concentraremos no cerne do assunto — a análise criminal, a presunção absoluta de vulnerabilidade e o novo entendimento legislativo (Lei 15.353/2026)."
     ],
-    notes: "Explicar que a negligência estatal viola o Art. 227 da Constituição Federal que impõe proteção integral com absoluta prioridade.",
+    notes: "Explicar rapidamente a abrangência do TCC, mas alinhar a expectativa da banca de que o foco desta defesa será a aplicação prática do Direito Penal.",
     type: "text"
   },
   {
-    id: "concepts",
-    chapter: "2. Dignidade Sexual no Direito Penal",
-    title: "Conceitos Jurídicos Fundamentais",
+    id: "state-omission",
+    chapter: "2. Panorama Situacional",
+    title: "Estatísticas, Omissão do Estado e Proteção",
     bullets: [
-      "Abuso Sexual: Relação adulto-cêntrica marcada pela desigualdade de poder, onde o adulto se apropria do menor como objeto de prazer (COUTO CUNHA, 2021). Também definido como jogo sexual para estimulação de outrem (AZEVEDO; GUERRA, 1998). Sem finalidade mercantil.",
-      "Exploração Sexual: Utilização da criança ou adolescente para fins sexuais mediante pagamento, configurando a mercantilização do corpo.",
-      "Vulnerabilidade Etária Absoluta: Menores de 14 anos possuem incapacidade civil/penal de consentimento sexual presumidamente perfeita."
+      "Cenário alarmante: Cerca de 80% dos casos documentados são intrafamiliares. Em regiões isoladas da Amazônia, estima-se subnotificação de até 90%.",
+      "Omissão Ilícita Manifesta: Insuficiência escolar (falta de educação sexual preventiva) e extrema precariedade na rede protetiva nas áreas de interior.",
+      "Necessidade de Prestação Positiva: O Estado deve estruturar urgentemente salas de escuta protegida (Lei 13.431/2017) e equipar conselhos tutelares e polícias locais.",
+      "Consequência Jurídica: A inércia configura responsabilidade do poder público pela facilitação estrutural desses crimes cruéis."
     ],
-    notes: "Diferenciação clara entre abuso e exploração, embasada na doutrina de Couto Cunha e Azevedo & Guerra.",
+    notes: "Apresentar rapidamente os números e a falha do Estado nas prestações positivas, e então fazer o gancho informando que agora passará efetivamente aos crimes.",
+    type: "text"
+  },
+  {
+    id: "concepts-diferenca",
+    chapter: "3. Dignidade Sexual no Direito Penal",
+    title: "Abuso vs. Exploração Sexual",
+    bullets: [
+      "Abuso Sexual: Ausência de mercantilização.",
+      "Entendimento Doutrinário: Caracteriza-se por uma relação adulto-cêntrica e desigualdade de poder, onde o adulto se apropria do menor como mero objeto de prazer para satisfação de desejos (COUTO CUNHA, 2021).",
+      "Também é definido como um 'jogo sexual' voltado para a estimulação de outrem, submetendo a vítima aos interesses do agressor (AZEVEDO; GUERRA, 1998).",
+      "Exploração Sexual: Caracteriza-se pela mercantilização do corpo infantil, envolvendo finalidade de lucro através da utilização da criança ou adolescente para fins sexuais."
+    ],
+    notes: "Diferenciação clara entre abuso e exploração. O foco deste trabalho incide sobre o Abuso Sexual (Estupro de Vulnerável), onde não há finalidade mercantil.",
+    type: "text"
+  },
+  {
+    id: "concepts-vulnerabilidade",
+    chapter: "3. Dignidade Sexual no Direito Penal",
+    title: "Vulnerabilidade Etária e Presunção",
+    bullets: [
+      "Vulnerabilidade Etária Absoluta: Menores de 14 anos possuem incapacidade civil/penal de consentimento sexual presumidamente perfeita.",
+      "A proteção penal da criança e do adolescente baseia-se na imaturidade fisiológica e psicológica para o entendimento e anuência à prática sexual."
+    ],
+    notes: "Dar o gancho para a entrada nos tipos penais específicos.",
     type: "text"
   },
   {
     id: "estupro-caput",
-    chapter: "2.1 Tipos Penais",
+    chapter: "4. Análise Criminal",
     title: "Crime de Estupro - Artigo 213, CP",
     bullets: [
       '"Art. 213. Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso:"',
@@ -75,85 +100,56 @@ const TCC_SLIDES: Slide[] = [
       "§ 2º Se da conduta resulta morte: Pena - reclusão, de 12 (doze) a 30 (trinta) anos.",
       "Art. 226, CP: Causas de aumento de pena (agravante até a metade se houver relação de parentesco, autoridade, etc.)."
     ],
-    notes: "Falar rapidamente do crime de estupro antes de entrar no Estupro de Vulnerável.",
+    notes: "Falar rapidamente do crime de estupro antes de entrar no cerne: o Estupro de Vulnerável.",
     type: "text"
   },
   {
     id: "estupro-vulneravel",
-    chapter: "2.1 Tipos Penais",
-    title: "Estupro de Vulnerável - Artigo 217-A, CP",
+    chapter: "4. Análise Criminal",
+    title: "Estupro de Vulnerável - Artigo 217-A",
     bullets: [
-      '"Art. 217-A. Ter conjunção carnal ou praticar outro ato libidinoso com menor de 14 (catorze) anos: Pena - reclusão, de 10 (dez) a 18 (dezoito) anos, e multa."',
-      "§ 1º Incorre na mesma pena quem pratica as ações descritas no caput com alguém que, por enfermidade ou deficiência mental, não tem o necessário discernimento para a prática do ato, ou que, por qualquer outra causa, não pode oferecer resistência.",
-      "Mera contemplação lasciva pode ser suficiente para a consumação (5ª Turma STJ). O estado de sono pode dar ensejo à prática do crime da mesma forma.",
-      "Vítima vulnerável: Beijo lascivo, ainda que tenha a anuência da vítima, pouco importando o emprego ou não de violência ou grave ameaça.",
-      "Dolo: A vontade de constranger a vítima à prática de ato libidinoso, não sendo necessária a intenção de satisfazer a lascívia."
+      '"Art. 217-A. Ter conjunção carnal ou praticar outro ato libidinoso com menor de 14 (catorze) anos: Pena - reclusão, de 10 a 18 anos, e multa."',
+      "§ 1º Incorre na mesma pena quem pratica com alguém que, por enfermidade mental ou outra causa, não pode oferecer resistência.",
+      "§ 4º A pena é aumentada se o crime é cometido em concurso de 2 ou mais pessoas.",
+      "§ 5º As penas aplicam-se independentemente do consentimento da vítima ou do fato de ela ter tido relações anteriores ao crime.",
+      "Elementos constitutivos: Dolo (vontade de constranger à prática de ato libidinoso, independendo da intenção de satisfazer a lascívia).",
+      "Consumação: A mera contemplação lasciva ou o beijo lascivo podem configurar a infração; o estado de sono também impede defeso, tipificando o crime."
     ],
-    notes: "Apresentar o artigo completo e elementos constitutivos (Dolo, contemplação, vulnerabilidade).",
+    notes: "Apresentar o artigo 217-A completo e seus elementos constitutivos. O slide subsequente tratará da questão da tentativa.",
     type: "text"
   },
   {
-    id: "pergunta-tentativa",
-    chapter: "2.1 Tipos Penais",
+    id: "tentativa-estupro-vulneravel",
+    chapter: "4. Análise Criminal",
     title: "Tentativa no Estupro de Vulnerável",
     bullets: [
-      "O crime de estupro de vulnerável admite tentativa?"
-    ],
-    notes: "Pegadinha com a banca: questionar se cabe tentativa antes de apresentar a jurisprudência do STJ.",
-    type: "text"
-  },
-  {
-    id: "resposta-tentativa",
-    chapter: "2.1 Tipos Penais",
-    title: "Posicionamento do STJ sobre Tentativa",
-    bullets: [
-      "O STJ entende que NÃO é cabível a modalidade tentada para o crime de estupro de vulnerável.",
+      "O crime de estupro de vulnerável admite tentativa?",
+      "Posicionamento do STJ: NÃO é cabível a modalidade tentada para o crime de estupro de vulnerável.",
       "Qualquer contato libidinoso com menor de 14 anos já consuma o delito, sendo irrelevante se a conduta foi interrompida ou superficial, pois o bem jurídico da dignidade e liberdade sexual da vítima já se encontra violado.",
-      "Tema Repetitivo 1121 do STJ – REsp 1.954.997/SC.",
-      "Outros julgados relevantes: REsp 2.172.883/SP e REsp 1.694.310/GO."
+      "Jurisprudência: Tema Repetitivo 1121 do STJ – REsp 1.954.997/SC. Outros julgados: REsp 2.172.883/SP e REsp 1.694.310/GO."
     ],
-    notes: "Resposta da provocação anterior: o STJ não admite tentativa.",
+    notes: "Questionamento à banca seguido da jurisprudência consolidada do STJ.",
     type: "text"
   },
   {
-    id: "estupro-vulneravel-paragrafos",
-    chapter: "2.1 Tipos Penais",
-    title: "Estupro de Vulnerável - Parágrafos 4º e 5º",
+    id: "tabela-evolucao",
+    chapter: "4. Análise Criminal",
+    title: "Evolução Legislativa sobre a Presunção e Vulnerabilidade",
     bullets: [
-      "§ 4º A pena é aumentada se o crime é cometido em concurso de 2 (duas) ou mais pessoas.",
-      "§ 5º As penas previstas no caput e nos §§ 1º, 3º e 4º deste artigo aplicam-se independentemente do consentimento da vítima ou do fato de ela ter mantido relações sexuais anteriormente ao crime."
-    ],
-    notes: "Parágrafos finais do artigo 217-A.",
-    type: "text"
-  },
-  {
-    id: "tabela-evolucao-1",
-    chapter: "2.1 Tipos Penais",
-    title: "Evolução Legislativa (1/2)",
-    bullets: [
-      "Antes de 2009 (Art. 224, CP): Previa presunção de violência e gerou debate se a presunção seria absoluta ou relativa.",
-      "2009 (Lei 12.015): Revogou o art. 224 e criou o art. 217-A. A nova redação buscou superar a presunção, mas não encerrou a discussão.",
+      "Antes de 2009 (Art. 224, CP): Previa presunção de violência e gerou debate (absoluta vs. relativa).",
+      "2009 (Lei 12.015): Revogou o art. 224 e criou o art. 217-A. A nova redação buscou superar a presunção.",
       "2017 (Súmula 593 STJ): Consolidou a vulnerabilidade etária absoluta, sendo irrelevante o consentimento.",
-      "2018 (Lei 13.718): Acrescentou o §5º ao art. 217-A, expandindo a Súmula 593 para todas as hipóteses de vulnerabilidade."
-    ],
-    notes: "Tabela de evolução legislativa apontando de 2009 a 2018.",
-    type: "table"
-  },
-  {
-    id: "tabela-evolucao-2",
-    chapter: "2.1 Tipos Penais",
-    title: "Evolução Legislativa (2/2)",
-    bullets: [
+      "2018 (Lei 13.718): Acrescentou o §5º ao art. 217-A, expandindo a Súmula 593 para todas as hipóteses de vulnerabilidade.",
       "2025 (STJ REsp 2.045.280): Admitiu, em situação específica, relativização da orientação da Súmula 593, reabrindo o debate.",
-      "2025 (CIDH - Comunicado): Manifestou preocupação com a relativização da proteção penal, alertando para violação dos deveres de proteção.",
+      "2025 (CIDH - Comunicado): Manifestou preocupação com a relativização da proteção penal.",
       "2026 (Lei 15.353): Acrescentou o §4º-A reafirmando a proteção penal absoluta e reformulou o §5º."
     ],
-    notes: "Tabela de evolução legislativa do contexto jurisprudencial de 2025/2026.",
+    notes: "Tabela cronológica completa sobre a evolução e marcos jurídicos do tema.",
     type: "table"
   },
   {
     id: "romeu-julieta",
-    chapter: "2.2 Interpretações Doutrinárias",
+    chapter: "5. Interpretações Doutrinárias",
     title: "Teoria de Romeu e Julieta",
     bullets: [
       "Teoria de Romeu e Julieta",
@@ -165,76 +161,27 @@ const TCC_SLIDES: Slide[] = [
   },
   {
     id: "law-evolution",
-    chapter: "2.2 Evolução e Leis Recentes",
-    title: "O Rigor Legislativo Atualizado",
+    chapter: "5. Interpretações Doutrinárias",
+    title: "O Novo Entendimento Legislativo",
     bullets: [
       "Lei nº 12.015/2009: Marco que unificou e consagrou a dignidade sexual de vulneráveis contra velhas classificações morais.",
       "Súmula 593 do STJ: Consolidou que o consentimento ou histórico sexual anterior do vulnerável é irrelevante para a configuração do crime.",
       "Lei nº 15.280/2025: Endureceu severamente a pena base do estupro de vulnerável (Art. 217-A) para 10 a 18 anos de reclusão.",
-      "Lei nº 15.353/2026: Positivou por definitivo que a vulnerabilidade é absoluta e insuscetível de qualquer flexibilização judicial."
+      "Lei nº 15.353/2026: Positivou por definitivo que a vulnerabilidade é absoluta e insuscetível de qualquer flexibilização judicial, sem possibilidade de relativização pelos Tribunais Superiores."
     ],
-    notes: "A Lei de 2026 removeu qualquer margem para relativizações indesejadas pelo magistrado, preservando integralmente o menor.",
+    notes: "A Lei de 2026 removeu a margem para a relativização ('Teoria de Romeu e Julieta') pelo magistrado, preservando integralmente o menor.",
     type: "law"
   },
   {
-    id: "state-omission",
-    chapter: "3. Omissão Estatal",
-    title: "Proteção Integral e Responsabilidade",
-    bullets: [
-      "Princípio da Proteção Integral (Art. 227 CF e ECA): Crianças/adolescentes como sujeitos de direitos prioritários, não meros objetos de tutela.",
-      "Responsabilidade Civil Estatal (Art. 37, §6º CF): Configurada pela omissão estatal qualificada diante de previsibilidade de graves riscos.",
-      "Omissão Ilícita Manifesta: Insuficiência escolar e precariedade no atendimento de CRAS, CREAS e Conselhos Tutelares."
-    ],
-    notes: "Responsabilidade estatal por omissão decorre do dever constitucional impositivo do Estado em criar barreiras reais ao agressor.",
-    type: "text"
-  },
-  {
-    id: "sexual-education",
-    chapter: "4. Educação Sexual Escolar",
-    title: "Instrumento de Prevenção Criminal",
-    bullets: [
-      "LDB (Lei 9.394/1996) e Parâmetros Curriculares Nacionais (1997): Preveem a transversalidade obrigatória do tema sexualidade.",
-      "Prevenção Geral Positiva: Conscientização social e capacitação do próprio vulnerável para autoproteção e denúncia ativa.",
-      "Omissão Ilícita Preventiva: Ausência de metodologias apropriadas que expõem crianças a predadores por total desinformação."
-    ],
-    notes: "Enfatizar que a educação sexual nas escolas ensina a criança a identificar toques inadequados e relatar sem medo.",
-    type: "text"
-  },
-  {
-    id: "victim-impacts",
-    chapter: "5. Impactos na Vítima e Provas",
-    title: "Relevância Probatória e Escuta Especial",
-    bullets: [
-      "A Clandestinidade Delitiva: Ocorridos no recesso do lar, tornando a palavra instruída da vítima a prova central e proeminente.",
-      "Entendimento Paciente: Destaque na formação do convencimento do julgador (Guilherme Nucci e Fernando Capez).",
-      "Lei da Escuta Protegida (Lei 13.431/2017) e Depoimento Especial: Proíbe a tortuosa revitimização processual institucional."
-    ],
-    notes: "Mesmo com leis consolidadas, a falta de salas adequadas de depoimento especial no Norte sabota a qualidade do conjunto probatório.",
-    type: "text"
-  },
-  {
-    id: "regional-reality",
-    chapter: "6. A Realidade na Região Norte",
-    title: "Vulnerabilidade e Omissão Estrutural na Amazônia",
-    bullets: [
-      "Região Norte: Concentração dos piores índices e maior subnotificação (estimada em até 90% em áreas rurais isoladas).",
-      "Fatores Agravantes: Extrema pobreza, desinformação severa, dependência de vias fluviais e cultura tradicional do silenciamento.",
-      "Ausência de salas de Depoimento Especial fora das capitais sabota a justiça criminal e incentiva o sentimento de impunidade."
-    ],
-    notes: "Relatórios do UNICEF 2024/2025 registram altos focos próximos a garimpos, fronteiras flutuantes e comunidades ribeirinhas.",
-    type: "regional"
-  },
-  {
     id: "conclusion",
-    chapter: "7. Conclusão",
-    title: "Propostas e Considerações Finais",
+    chapter: "6. Conclusão",
+    title: "Considerações Finais",
     bullets: [
-      "Confirmação da Hipótese: A omissão de prevenção escolar e estrutural eleva exponencialmente a vulnerabilidade.",
-      "Implementação obrigatória, sistemática e contínua de educação sexual preventiva nas escolas do Norte do país.",
-      "Ampliação orçamentária emergencial para a capilarização de salas de Depoimento Especial em delegacias do interior da Amazônia.",
-      "Integração ativa: Conselho Tutelar, CREAS, Saúde de Fronteira e Ministério Público."
+      "O Estado falhou em proteger, mas o Direito Penal respondeu reafirmando a presunção absoluta do vulnerável.",
+      "É imperativa a implementação obrigatória, sistemática e contínua de educação sexual preventiva e ampliação orçamentária para estruturar locais de escuta protegida.",
+      "O sistema de persecução deve atuar em rede integrada (Conselho Tutelar, Saúde, Segurança e Ministério Público)."
     ],
-    notes: "Somente superando a inércia do Estado será possível dar efetividade real à proteção integral constitucional.",
+    notes: "Encerramento. Agradecimento à banca examinadora.",
     type: "conclusion"
   }
 ];
@@ -625,7 +572,7 @@ export default function App() {
                             </tr>
                           </thead>
                           <tbody className="bg-slate-50 text-slate-800">
-                            {currentSlideData.id === "tabela-evolucao-1" && (
+                            {currentSlideData.id === "tabela-evolucao" && (
                               <>
                                 <tr className="border-b border-white">
                                   <td className="py-3 px-3 border-r border-white font-bold align-top">Antes de 2009</td>
@@ -645,16 +592,12 @@ export default function App() {
                                   <td className="py-3 px-3 border-r border-white bg-slate-100 align-top font-medium">Irrelevantes consentimento, experiência anterior ou relacionamento.</td>
                                   <td className="py-3 px-3 align-top font-bold text-center">Consolidou a ideia de vulnerabilidade etária absoluta.</td>
                                 </tr>
-                                <tr>
+                                <tr className="border-b border-white">
                                   <td className="py-3 px-3 border-r border-white font-bold align-top relative">2018</td>
                                   <td className="py-3 px-3 border-r border-white align-top font-mono text-[10px] md:text-xs text-slate-600">Lei nº 13.718/2018</td>
                                   <td className="py-3 px-3 border-r border-white bg-slate-100 align-top font-medium">Acrescentou o <strong>§5º ao art. 217-A</strong>.</td>
                                   <td className="py-3 px-3 align-top">O legislador expandiu a Súmula 593 para todas as hipóteses.</td>
                                 </tr>
-                              </>
-                            )}
-                            {currentSlideData.id === "tabela-evolucao-2" && (
-                              <>
                                 <tr className="border-b border-white">
                                   <td className="py-4 px-3 border-r border-white font-bold align-top" rowSpan={2}>2025</td>
                                   <td className="py-4 px-3 border-r border-white align-top font-mono text-[10px] md:text-xs text-slate-600">STJ – REsp 2.045.280</td>
