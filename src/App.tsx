@@ -136,7 +136,7 @@ const TCC_SLIDES: Slide[] = [
       "Art. 218-C, CP: Oferecer, trocar, disponibilizar, transmitir, publicar ou divulgar, por qualquer meio, cena de estupro, estupro de vulnerável, sexo ou nudez sem consentimento."
     ],
     notes: "Apresentação sistemática dos crimes instrumentais e cibernéticos que violam a dignidade sexual e a infância dentro do ECA e do Código Penal.",
-    type: "text"
+    type: "table"
   },
   {
     id: "tabela-evolucao",
@@ -569,19 +569,19 @@ export default function App() {
                     </div>
                     
                     {currentSlideData.type === "table" ? (
-                      <div className="mt-4 border border-slate-300 w-full rounded-none shadow-sm bg-white overflow-hidden max-h-[50vh] overflow-y-auto" id="slide-table-container">
-                        <table className="w-full text-left border-collapse text-xs md:text-sm">
-                          <thead className="bg-[#1E293B] text-white">
-                            <tr>
-                              <th className="py-2.5 px-3 border border-slate-600 w-1/5">Período / Marco</th>
-                              <th className="py-2.5 px-3 border border-slate-600 w-1/5">Norma / Decisão</th>
-                              <th className="py-2.5 px-3 border border-slate-600 w-2/5">Conteúdo</th>
-                              <th className="py-2.5 px-3 border border-slate-600 w-1/5">Impacto</th>
-                            </tr>
-                          </thead>
-                          <tbody className="bg-slate-50 text-slate-800">
-                            {currentSlideData.id === "tabela-evolucao" && (
-                              <>
+                      <div className="space-y-4" id="slide-table-layout">
+                        <div className="mt-4 border border-slate-350 w-full rounded-none shadow-sm bg-white overflow-hidden max-h-[48vh] overflow-y-auto" id="slide-table-container">
+                          {currentSlideData.id === "tabela-evolucao" ? (
+                            <table className="w-full text-left border-collapse text-xs md:text-sm">
+                              <thead className="bg-[#1E293B] text-white">
+                                <tr>
+                                  <th className="py-2.5 px-3 border border-slate-600 w-1/5">Período / Marco</th>
+                                  <th className="py-2.5 px-3 border border-slate-600 w-1/5">Norma / Decisão</th>
+                                  <th className="py-2.5 px-3 border border-slate-600 w-2/5">Conteúdo</th>
+                                  <th className="py-2.5 px-3 border border-slate-600 w-1/5">Impacto</th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-slate-50 text-slate-800">
                                 <tr className="border-b border-white">
                                   <td className="py-3 px-3 border-r border-white font-bold align-top">Antes de 2009</td>
                                   <td className="py-3 px-3 border-r border-white align-top font-mono text-[10px] md:text-xs text-slate-600">Art. 224 do CP</td>
@@ -623,10 +623,127 @@ export default function App() {
                                   <td className="py-4 px-3 border-r border-white bg-slate-100 align-top font-medium">Acrescentou o <strong>§4º-A</strong> (inadmissível relativização) e reformulou o <strong>§5º</strong>.</td>
                                   <td className="py-4 px-3 align-top font-bold bg-[#1E293B] text-white">Reafirmou a proteção penal absoluta.</td>
                                 </tr>
-                              </>
-                            )}
-                          </tbody>
-                        </table>
+                              </tbody>
+                            </table>
+                          ) : currentSlideData.id === "crimes-correlatos-tecnologia" ? (
+                            <table className="w-full text-left border-collapse text-xs md:text-sm">
+                              <thead className="bg-[#1E293B] text-white">
+                                <tr>
+                                  <th className="py-3 px-4 border border-slate-600 w-1/2 bg-[#1E293B]">Estatuto da Criança e do Adolescente (ECA)</th>
+                                  <th className="py-3 px-4 border border-slate-600 w-1/2 bg-[#334155] border-l border-slate-500">Código Penal (CP)</th>
+                                </tr>
+                              </thead>
+                              <tbody className="bg-slate-50 text-slate-800">
+                                <tr className="border-b border-slate-200">
+                                  <td className="py-4 px-4 border-r border-slate-200 align-top">
+                                    <div className="font-mono text-[11px] text-red-600 font-bold bg-red-50 inline-block px-1.5 py-0.5 mb-1.5">Art. 240, § 1º, II, ECA</div>
+                                    <p className="text-slate-800 leading-normal font-semibold text-xs md:text-xs">
+                                      Agenciar, facilitar, recrutar, coagir ou intermediar a participação de criança ou adolescente em cenas de sexo explícito ou pornográfica.
+                                    </p>
+                                    <div className="font-mono text-[10px] text-red-700 font-bold bg-red-50/80 inline-block px-1.5 py-0.5 mt-2 rounded">
+                                      Pena: Reclusão, 4 a 8 anos, e multa
+                                    </div>
+                                  </td>
+                                  <td className="py-4 px-4 align-top">
+                                    <div className="font-mono text-[11px] text-slate-700 font-bold bg-slate-100 inline-block px-1.5 py-0.5 mb-1.5">Art. 216-B, CP</div>
+                                    <p className="text-slate-800 leading-normal font-semibold text-xs md:text-xs">
+                                      Produzir, filmar ou registrar cena de nudez ou ato sexual privado e íntimo sem autorização.
+                                    </p>
+                                    <div className="font-mono text-[10px] text-slate-700 font-bold bg-slate-100/80 inline-block px-1.5 py-0.5 mt-2 rounded mr-1">
+                                      Pena: Detenção, 6 meses a 1 ano, e multa
+                                    </div>
+                                    <p className="text-[10px] text-slate-500 font-mono mt-1">
+                                      *Parágrafo Único: Mesma pena para montagens em registros (deepfakes).
+                                    </p>
+                                  </td>
+                                </tr>
+                                <tr className="border-b border-slate-200">
+                                  <td className="py-4 px-4 border-r border-slate-200 align-top bg-slate-100/50">
+                                    <div className="font-mono text-[11px] text-red-600 font-bold bg-red-50 inline-block px-1.5 py-0.5 mb-1.5">Art. 241, ECA</div>
+                                    <p className="text-slate-800 leading-normal font-semibold text-xs md:text-xs">
+                                      Vender, expor à venda, disponibilizar, transmitir, distribuir, publish ou divulgar por qualquer meio cena de sexo explícito ou pornográfica envolvendo criança ou adolescente.
+                                    </p>
+                                    <div className="font-mono text-[10px] text-red-700 font-bold bg-red-50/80 inline-block px-1.5 py-0.5 mt-2 rounded">
+                                      Pena: Reclusão, 4 a 8 anos, e multa
+                                    </div>
+                                  </td>
+                                  <td className="py-4 px-4 align-top bg-slate-100/50">
+                                    <div className="font-mono text-[11px] text-slate-700 font-bold bg-slate-100 inline-block px-1.5 py-0.5 mb-1.5">Art. 218-C, CP</div>
+                                    <p className="text-slate-800 leading-normal font-semibold text-xs md:text-xs">
+                                      Oferecer, trocar, disponibilizar, transmitir, publicar ou divulgar, por qualquer meio, cena de estupro, estupro de vulnerável, sexo ou nudez sem consentimento.
+                                    </p>
+                                    <div className="font-mono text-[10px] text-slate-700 font-bold bg-slate-200/80 inline-block px-1.5 py-0.5 mt-2 rounded">
+                                      Pena: Reclusão, 1 a 5 anos
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="py-4 px-4 border-r border-slate-200 align-top">
+                                    <div className="font-mono text-[11px] text-red-600 font-bold bg-red-50 inline-block px-1.5 py-0.5 mb-1.5">Art. 241-C, ECA</div>
+                                    <p className="text-slate-800 leading-normal font-semibold text-xs md:text-xs">
+                                      Adquirir, possuir ou armazenar, por qualquer meio, foto, vídeo ou registro contendo cena de sexo explícito ou pornográfica envolvendo menor.
+                                    </p>
+                                    <div className="font-mono text-[10px] text-red-700 font-bold bg-red-50/80 inline-block px-1.5 py-0.5 mt-2 rounded">
+                                      Pena: Reclusão, 1 a 4 anos, e multa
+                                    </div>
+                                  </td>
+                                  <td className="py-4 px-4 align-top bg-slate-100/30 text-slate-500 italic">
+                                    <span className="text-[11px] font-mono block mb-1">Sem correspondência direta no CP</span>
+                                    <span className="text-[11.5px] leading-relaxed block font-semibold text-slate-600">
+                                      Armazenamento e a posse individual de pornografia infantojuvenil constitui tipo penal autônomo criado especificamente no estatuto menorista (ECA).
+                                    </span>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          ) : null}
+                        </div>
+
+                        {currentSlideData.id === "crimes-correlatos-tecnologia" && (
+                          <div className="bg-blue-50/85 border-l-4 border-blue-600 p-4 shadow-xs mt-3 flex gap-3 items-start" id="diferencial-protetivo-note">
+                            <Scale className="h-5 w-5 text-blue-700 shrink-0 mt-0.5" />
+                            <div className="space-y-1">
+                              <h4 className="font-sans font-extrabold text-[#1E293B] text-xs uppercase tracking-wider">
+                                Diferencial Protetivo Sistêmico
+                              </h4>
+                              <p className="text-slate-700 text-xs md:text-[13px] leading-relaxed">
+                                O Estatuto da Criança e do Adolescente (ECA) adota uma premissa de <strong>vulnerabilidade absoluta permanente</strong> baseada estritamente na menoridade (protegendo pessoas até 18 anos incompletos nos Artigos 240, 241 e correlatos). Em contraste, as inovações no Código Penal (CP) tutelam as infrações à dignidade sexual e privacidade de forma ampla, cuja caracterização gravita essencialmente em torno da ausência de consentimento de sujeitos capazes.
+                              </p>
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    ) : currentSlideData.id === "romeu-julieta" ? (
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start" id="romeu-julieta-container">
+                        <ul className="space-y-4 pt-2 border-l border-slate-200 pl-6" id="slide-bullet-list">
+                          {currentSlideData.bullets.map((bullet, i) => {
+                            const isMainPrereq = bullet.includes("Súmula 593") || bullet.includes("Lei nº 15.353/2026") || bullet.includes("Art. 217-A") || bullet.includes("subnotificação") || bullet.includes("Tema Repetitivo 1121");
+                            return (
+                              <li 
+                                key={i} 
+                                className={`text-slate-700 text-sm md:text-base leading-relaxed flex items-start gap-1 p-2 rounded-none transition ${
+                                  isMainPrereq ? "bg-[#F1F5F9] border-l-2 border-[#1E293B] text-slate-950 font-medium" : "hover:bg-slate-50"
+                                }`}
+                                id={`slide-bullet-${i}`}
+                              >
+                                <span className="w-1.5 h-1.5 bg-[#334155] rotate-45 shrink-0 mt-2 mr-3" id={`bullet-counter-${i}`} />
+                                <span className="flex-1">{bullet}</span>
+                              </li>
+                            )
+                          })}
+                        </ul>
+                        <div className="bg-amber-50/70 border-l-4 border-amber-500 p-5 shadow-sm space-y-3" id="stj-informative-box">
+                          <div className="flex items-center gap-2 text-amber-900 font-bold text-xs font-mono uppercase tracking-wider">
+                            <Scale className="h-4 w-4 text-amber-700" />
+                            <span>Informativo 820 - STJ</span>
+                          </div>
+                          <p className="text-slate-800 text-xs md:text-sm leading-relaxed italic">
+                            &ldquo;É possível o reconhecimento da atipicidade de conduta que poderia configurar o crime de estupro de vulnerável, quando as circunstâncias fáticas verificadas (consentimento da família da vítima, inclusive abrigando o casal por período de tempo, e a manutenção do relacionamento até os dias atuais, inclusive com nascimento de filho fruto da relação), indicam que o bem jurídico tutelado não foi vulnerado.&rdquo;
+                          </p>
+                          <div className="text-[10px] text-slate-500 font-mono text-right">
+                            Tribunal da Cidadania • Distinguishing Constitucional
+                          </div>
+                        </div>
                       </div>
                     ) : (
                       <ul className="space-y-4 pt-4 border-l border-slate-200 pl-6" id="slide-bullet-list">
@@ -637,7 +754,7 @@ export default function App() {
                             <li 
                               key={i} 
                               className={`text-slate-700 text-sm md:text-base leading-relaxed flex items-start gap-1 p-2 rounded-none transition ${
-                                isMainPrereq ? "bg-[#F1F5F9] border-l-2 border-[#1E293B] text-slate-950 font-medium" : "hover:bg-slate-50"
+                                    isMainPrereq ? "bg-[#F1F5F9] border-l-2 border-[#1E293B] text-slate-950 font-medium" : "hover:bg-slate-50"
                               }`}
                               id={`slide-bullet-${i}`}
                             >
