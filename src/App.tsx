@@ -10,7 +10,14 @@ import {
   ShieldAlert,
   GraduationCap,
   Layers,
-  Download
+  Download,
+  Scale,
+  Gavel,
+  Sparkles,
+  CheckCircle,
+  XCircle,
+  Copy,
+  Check
 } from "lucide-react";
 import { jsPDF } from "jspdf";
 
@@ -90,20 +97,6 @@ const TCC_SLIDES: Slide[] = [
     type: "text"
   },
   {
-    id: "estupro-caput",
-    chapter: "4. Análise Criminal",
-    title: "Crime de Estupro - Artigo 213, CP",
-    bullets: [
-      '"Art. 213. Constranger alguém, mediante violência ou grave ameaça, a ter conjunção carnal ou a praticar ou permitir que com ele se pratique outro ato libidinoso:"',
-      "Pena - reclusão, de 6 (seis) a 10 (dez) anos.",
-      "§ 1º Se da conduta resulta lesão corporal de natureza grave ou se a vítima é menor de 18 (dezoito) ou maior de 14 (catorze) anos: Pena - reclusão, de 8 (oito) a 12 (doze) anos.",
-      "§ 2º Se da conduta resulta morte: Pena - reclusão, de 12 (doze) a 30 (trinta) anos.",
-      "Art. 226, CP: Causas de aumento de pena (agravante até a metade se houver relação de parentesco, autoridade, etc.)."
-    ],
-    notes: "Falar rapidamente do crime de estupro antes de entrar no cerne: o Estupro de Vulnerável.",
-    type: "text"
-  },
-  {
     id: "estupro-vulneravel",
     chapter: "4. Análise Criminal",
     title: "Estupro de Vulnerável - Artigo 217-A",
@@ -129,6 +122,20 @@ const TCC_SLIDES: Slide[] = [
       "Jurisprudência: Tema Repetitivo 1121 do STJ – REsp 1.954.997/SC. Outros julgados: REsp 2.172.883/SP e REsp 1.694.310/GO."
     ],
     notes: "Questionamento à banca seguido da jurisprudência consolidada do STJ.",
+    type: "text"
+  },
+  {
+    id: "crimes-correlatos-tecnologia",
+    chapter: "4. Análise Criminal",
+    title: "Crimes Correlatos e do Estatuto da Criança e do Adolescente (ECA)",
+    bullets: [
+      "Art. 240, § 1º, II, ECA: Agenciar, facilitar, recrutar, coagir ou intermediar a participação de criança ou adolescente em cenas de sexo explícito ou pornográfica.",
+      "Art. 241, ECA: Vender, expor à venda, disponibilizar, transmitir, distribuir, publicar ou divulgar cena de sexo explícito ou pornográfica envolvendo criança ou adolescente.",
+      "Art. 241-C, ECA: Adquirir, possuir ou armazenar, por qualquer meio, foto, vídeo ou registro contendo cena de sexo explícito ou pornográfica envolvendo menor.",
+      "Art. 216-B, CP: Produzir, filmar ou registrar cena de nudez ou ato sexual privado e íntimo sem autorização. Parágrafo Único: Mesma pena para montagens em registros.",
+      "Art. 218-C, CP: Oferecer, trocar, disponibilizar, transmitir, publicar ou divulgar, por qualquer meio, cena de estupro, estupro de vulnerável, sexo ou nudez sem consentimento."
+    ],
+    notes: "Apresentação sistemática dos crimes instrumentais e cibernéticos que violam a dignidade sexual e a infância dentro do ECA e do Código Penal.",
     type: "text"
   },
   {
@@ -190,8 +197,7 @@ const TCC_SLIDES: Slide[] = [
 const STATS_CARDS = [
   { label: "Subnotificação Estimada", value: "Até 90%", desc: "Em áreas remotas e ribeirinhas da Amazônia", type: "ratio", color: "text-red-500", icon: AlertTriangle },
   { label: "Casos por Hora (BR)", value: "3 crianças", desc: "A cada hora, sofreram agressão sexual", type: "count", color: "text-amber-500", icon: TrendingUp },
-  { label: "Abuso Intrafamiliar", value: "80% dos casos", desc: "Cometidos por parentes ou rede de convívio", type: "percent", color: "text-rose-500", icon: ShieldAlert },
-  { label: "Público Alvo Principal", value: "92% Feminino", desc: "Meninas negras e pardas são a maioria estatística", type: "gender", color: "text-purple-500", icon: Users }
+  { label: "Abuso Intrafamiliar", value: "80% dos casos", desc: "Cometidos por familiares ou pessoas próximas", type: "ratio", color: "text-slate-700", icon: Users }
 ];
 
 export default function App() {
@@ -439,6 +445,8 @@ export default function App() {
           >
             <FileText className="h-3.5 w-3.5 text-slate-600" /> Leis
           </button>
+
+
         </div>
       </header>
 
@@ -846,6 +854,8 @@ export default function App() {
               </div>
             </div>
           )}
+
+
         </section>
       </main>
 
